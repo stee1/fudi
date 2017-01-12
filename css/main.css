@@ -1,0 +1,268 @@
+/*Fonts*/
+@font-face {
+    font-family: LatoBold;
+    src: url(../fonts/Lato-Bol.ttf);
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src: url(../fonts/Lato-Reg.ttf);
+}
+
+@font-face {
+    font-family: LatoLight;
+    src: url(../fonts/Lato-Lig.ttf);
+}
+
+@font-face {
+    font-family: LatoHairline;
+    src: url(../fonts/Lato-Hai.ttf);
+}
+
+@font-face {
+    font-family: LatoHairlineItalic;
+    src: url(../fonts/Lato-HaiIta.ttf);
+}
+
+/*Common styles*/
+.red-line {
+    border-top: 2px solid #f57365;
+    width: 90px;
+    margin: 0 auto;
+}
+
+.bx-wrapper .bx-viewport {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #ffffff;
+}
+
+/*Main*/
+#main {
+    background: url("../images/main-bg.jpg") center no-repeat;
+    background-size: cover;
+    height: 881px;
+}
+
+#main .logo {
+    background: url("../images/logo.png") center no-repeat;
+    height: 119px;
+    width: 129px;
+    position: relative;
+    float: left;
+}
+
+#main .menu ul {
+    margin-top: 60px;
+}
+
+#main .menu ul li {
+    display: inline;
+}
+
+#main .menu ul li:not(:first-child) {
+    margin-left: 30px;
+}
+
+#main .menu ul li a {
+    font-family: LatoBold;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#main .text-wrap {
+    margin: 270px auto 240px auto;
+
+}
+
+#main .text-wrap h3 {
+    font-family: TimesNewRoman, "Times New Roman";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 36px;
+    color: #ffffff;
+    opacity: .7;
+    text-shadow: -1px 0 40px rgba(1, 1, 1, .55); /* drop shadow */
+    margin: 0;
+}
+
+#main .text-wrap h2 {
+    font-family: LatoBold;
+    font-size: 100px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#main .text-wrap button {
+    font-family: LatoBold;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 70px;
+    background: none;
+    border: 3px solid #fff; /* stroke */
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; /* border radius */
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+#main .text-wrap button:hover {
+    background: #ccc;
+    text-shadow: 1px 1px 5px #000;
+}
+
+#main .text-wrap p {
+    font-family: LatoRegular;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/*Advantages*/
+#advantages .row {
+    margin-top: 100px;
+    margin-bottom: 95px;
+}
+
+#advantages .item-logo1 {
+    background: url("../images/advantages-1.png") center no-repeat;
+    height: 107px;
+}
+
+#advantages .item-logo2 {
+    background: url("../images/advantages-2.png") center no-repeat;
+    height: 107px;
+}
+
+#advantages .item-logo3 {
+    background: url("../images/advantages-3.png") center no-repeat;
+    height: 107px;
+}
+
+#advantages p.title {
+    font-family: LatoBold;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#advantages p.text {
+    font-family: LatoLight;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#introducing {
+    padding-top: 100px;
+    background: #f7f7f7;
+}
+
+/*Introducing*/
+#introducing .img-iphone {
+    background: url("../images/iphone.png") center no-repeat;
+    background-size: contain;
+    height: 778px;
+}
+
+#introducing .text-wrap {
+    padding-left: 80px;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+#introducing h2 {
+    font-family: LatoBold;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#introducing .red-line {
+    margin: 0;
+}
+
+#introducing p {
+    font-family: LatoLight;
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#introducing button.app-store {
+    background: url("../images/app-store.png");
+    height: 39px;
+    width: 112px;
+    border: none;
+    margin-right: 5px;
+}
+
+#introducing button.google-play {
+    background: url("../images/google-play.png");
+    height: 39px;
+    width: 120px;
+    border: none;
+}
+
+/*Reviews*/
+#reviews {
+    background: #4a3949;
+}
+
+#reviews .container {
+    background: url("../images/reviews-bg.png") center no-repeat;
+    background-size: contain;
+    height: 460px;
+}
+
+#reviews .photo {
+    background: url("../images/photo.png") center no-repeat;
+    height: 114px;
+    width: 114px;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+#reviews p.text {
+    font-family: LatoHairline;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: .3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#reviews p.sign {
+    font-family: LatoHairlineItalic;
+    font-size: 18px;
+    color: #ffffff;
+    opacity: .3;
+}
+
+/*Responsive*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #reviews .container {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #introducing .img-iphone {
+        height: 690px;
+    }
+}
