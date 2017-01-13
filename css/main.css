@@ -42,6 +42,42 @@
     background: #ffffff;
 }
 
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
 /*Main*/
 #main {
     background: url("../images/main-bg.jpg") center no-repeat;
@@ -254,15 +290,159 @@
     opacity: .3;
 }
 
+/*Cuisines*/
+#cuisines h2 {
+    margin-top: 80px;
+    font-family: LatoBold;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#cuisines .row {
+    margin-top: 40px;
+}
+
+#cuisines .italian {
+    background: url("../images/cuisine-ita.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .indian {
+    background: url("../images/cuisine-indian.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .french {
+    background: url("../images/cuisine-french.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .steak {
+    background: url("../images/cuisine-steak.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .seafood {
+    background: url("../images/cuisine-seafood.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .sushi {
+    background: url("../images/cuisine-sushi.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .mexican {
+    background: url("../images/cuisine-mexican.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .chinese {
+    background: url("../images/cuisine-chinese.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .pizza {
+    background: url("../images/cuisine-pizza.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines .american {
+    background: url("../images/cuisine-american.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#cuisines p.count {
+    font-family: TimesNewRoman, "Times New Roman";
+    /*font-weight: bold;*/
+    font-style: italic;
+    font-size: 15px;
+    color: #ffffff;
+    text-shadow: -1px 0 40px rgba(1,1,1,.55); /* drop shadow */
+    text-transform: capitalize;
+    margin: 60px 0 0 0;
+}
+
+#cuisines p.name {
+    font-family: LatoBold;
+    font-size: 34px;
+    color: #ffffff;
+    text-shadow: -1px 0 40px rgba(1,1,1,.55); /* drop shadow */
+    text-transform: uppercase;
+    margin: -10px 0 80px 0;
+}
+
+/*Stats*/
+#stats p.count {
+    margin-top: 60px;
+    font-family: LatoBold;
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+}
+
+#stats p.caption {
+    margin-bottom: 60px;
+    font-family: LatoLight;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+/*Footer*/
+#footer {
+    height: 90px;
+    background: #f7f7f7;
+    border-top: 1px solid #bfbfbf;
+}
+
+#footer .container {
+    padding-top: 40px;
+}
+
+#footer p.copyright {
+    font-family: LatoLight;
+    font-size: 14px;
+    color: #8b8b8b;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#footer p.designed-by {
+    font-family: LatoLight;
+    font-size: 14px;
+    color: #8b8b8b;
+    text-transform: uppercase;
+}
+
+#footer p.designed-by>span {
+    font-family: LatoRegular;
+    color: #000;
+}
+
 /*Responsive*/
 @media (min-width: 768px) and (max-width: 991px) {
     #reviews .container {
         background-size: cover;
+    }
+
+    #stats p.count {
+        font-size: 30px;
+    }
+
+    #stats p.caption {
+        font-size: 14px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     #introducing .img-iphone {
         height: 690px;
+    }
+
+    #cuisines p.name {
+        font-size: 28px;
     }
 }
